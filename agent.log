@@ -286,3 +286,7 @@
 2025-08-09 11:31:20,013 - werkzeug - INFO -  * Restarting with stat
 2025-08-09 11:31:20,624 - werkzeug - WARNING -  * Debugger is active!
 2025-08-09 11:31:20,629 - werkzeug - INFO -  * Debugger PIN: 114-210-284
+2025-08-09 11:43:20,781 - werkzeug - INFO -  * Detected change in 'E:\\Dev\\Vibing\\AgentTest\\web_interface.py', reloading
+2025-08-09 11:43:20,838 - werkzeug - INFO -  * Restarting with stat
+2025-08-09 11:43:21,526 - werkzeug - WARNING -  * Debugger is active!
+2025-08-09 11:43:21,530 - werkzeug - INFO -  * Debugger PIN: 114-210-284
