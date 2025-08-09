@@ -18,10 +18,16 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: '3.9'
-        
+    
     - name: Update apt
       run: sudo apt update
         
+    - name: Install libtinfo5
+      run: sudo apt install -y libtinfo5
+
+    - name: Install libtinfo6
+      run: sudo apt install -y libtinfo6
+    
     - name: Install system dependencies
       run: |
         sudo apt update
