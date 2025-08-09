@@ -35,6 +35,22 @@ jobs:
     - name: Build APK with Buildozer
       run: |
         buildozer android debug
+
+    - name: Set up Android SDK
+      uses: android-actions/setup-android@v2
+      with:
+        build-tools: '34.0.0' # Or the specific version required by your project
+      
+    - name: Accept Android SDK licenses
+      run: |
+        yes | sdkmanager --licenses
+
+    - name: Add Build-Tools to PATH
+      run: echo "::add-path::$ANDROID_HOME/build-tools/$(ls $ANDROID_HOME/build-tools | sort -r | head -n 1)"
+
+    - name: Build APK with Buildozer
+      run: |
+        buildozer android debug
         
     - name: Upload APK artifact
       uses: actions/upload-artifact@v4
