@@ -19,6 +19,9 @@ jobs:
       with:
         python-version: '3.9'
         
+    - name: Update apt
+      run: sudo apt update
+        
     - name: Install system dependencies
       run: |
         sudo apt update
