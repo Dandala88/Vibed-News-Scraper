@@ -1,0 +1,9 @@
+kivy==2.1.0
+kivymd==1.1.1
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+feedparser>=6.0.10
+textstat>=0.7.3
+lxml>=4.9.0
+buildozer==1.5.0
+cython==0.29.33
